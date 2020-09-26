@@ -1,0 +1,146 @@
+.section__main-heading{
+    color: var(--color-primary-1);
+    font-size: 5rem;
+    line-height: 1.2;
+        font-weight: 700;
+
+
+    @media only screen and (max-width: $bt-small){
+        margin-bottom: 2.5rem;
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    
+}
+
+.section__main-paragraph{
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: var(--color-secondary);
+    font-weight: 500;
+    @media only screen and (max-width: $bt-small){
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        font-weight: 300;
+    }
+}
+
+.rating{
+    // margin: 10rem;
+
+    @media only screen and (max-width: $bt-small){
+        align-self: stretch;
+    }
+
+    &__list{
+        list-style: none;
+        padding-left: 17.5rem;
+
+        @media only screen and (max-width: $bt-small){
+            padding-left: 0;
+        }
+    }
+
+    &__item{
+        background-color: var(--color-secondary-light);
+        padding: 2rem 3rem;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        color: var(--color-primary-1);
+        font-weight: 500;
+        text-transform: capitalize;
+        display: flex;
+        @media only screen and (max-width: $bt-small){
+            flex-direction: column;
+            padding: 2rem 3rem;
+        }
+    }
+    &__item:not(:last-child){
+        margin-bottom: 1.8rem;
+    }
+
+    &__stars{
+        margin-right: 2.5rem;
+        @media only screen and (max-width: $bt-small){
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.star{
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block;
+    background-image: url(../images/icon-star.svg);
+    background-size: cover;
+
+}
+
+.review{
+    background-color: var(--color-primary-1);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 3rem;
+
+    @media only screen and (max-width: $bt-small){
+            margin-bottom: 3rem;
+    }
+    
+
+    &__user-box{
+        padding-bottom: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__user-image{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+    &__user-details{
+        margin-left: 2rem;
+        line-height: 1.5;
+    }
+
+    &__user-name{
+        color: var(--color-secondary-light);
+        font-size: 1.6rem;
+
+    }
+    &__user-verification{
+        color: var(--color-primary-2);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &__user{
+        color: var(--color-secondary-light);
+
+        &::before {
+            content:'\201C';
+            display:inline-block;
+            color: var(--color-secondary-light);
+        }
+        &::after {
+            content:'\201D';
+            display:inline-block;
+            color: var(--color-secondary-light);
+        }
+    }
+
+}
+
+.review:not(:last-child){
+    margin-right: 3.5rem;
+    @media only screen and (max-width: $bt-small){
+            margin-right: 0;
+    }
+}
+
+
+

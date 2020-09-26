@@ -1,0 +1,70 @@
+.container{
+    max-width: 135rem;
+    margin: 6rem auto;
+    position: relative;
+    border: 1px solid white;
+    box-shadow: 0rem 2rem 4rem rgba(0,0,0,.2);
+
+    @media only screen and (max-width: $bt-small){
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    &::after{
+        content: url(../images/bg-pattern-top-desktop.svg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media only screen and (max-width: $bt-small){
+        content: url(../images/bg-pattern-top-mobile.svg);
+
+        }
+    }
+
+    &::before{
+        content: url(../images/bg-pattern-bottom-desktop.svg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        line-height: 1;
+        font-size: 0;
+        @media only screen and (max-width: $bt-small){
+        content: url(../images/bg-pattern-bottom-mobile.svg);
+
+        }
+    }
+    
+}
+.top{
+    display: flex;
+    margin: 10rem;
+    align-items: center;
+
+    @media only screen and (max-width: $bt-small){
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 8rem 3rem 5rem 3rem;
+    }
+}
+
+.section__main{
+    flex: 0 0 40%;
+}
+
+.reviews{
+    display: flex;
+    margin: 10rem;
+
+    @media only screen and (max-width: $bt-small){
+        margin: 3rem;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
